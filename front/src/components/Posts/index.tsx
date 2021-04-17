@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import Card from '@/components/Card'
 
 interface Props{
   data:string
@@ -6,7 +7,11 @@ interface Props{
 const Posts:FC<Props> = ({data}) => {
   return (
     <div>
-      {data}
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
   )
 }
