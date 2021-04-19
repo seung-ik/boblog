@@ -2,12 +2,13 @@ import React from 'react'
 import Header from '@/components/Header'
 import { Link } from 'react-router-dom'
 import Posts from '@/components/Posts'
+import {Container} from '@/pages/Trend/style'
 
 
 export default function Trend() {
   const sampleTrendData="트렌드데이터"
   return (
-    <div>
+    <Container>
       <Header/>
       <div id="buttons">
         <Link to="/">트렌드</Link>
@@ -16,6 +17,6 @@ export default function Trend() {
       <div id="post-container">
         <Posts data={sampleTrendData}/>
       </div>
-    </div>
+    </Container>
   )
 }

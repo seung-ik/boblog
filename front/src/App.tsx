@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route,Switch,Redirect} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom'
 import loadable from '@loadable/component'
 
 // const Calendar = loadable(()=> import("./components/Calendar"))
