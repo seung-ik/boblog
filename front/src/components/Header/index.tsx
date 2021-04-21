@@ -1,15 +1,14 @@
 import React from 'react'
-import { HeaderConatiner } from '@/components/Header/style'
+import { HeaderConatiner, LoginButton } from '@/components/Header/style'
+import SearchIcon from '@material-ui/icons/Search';
 
 export default function Header() {
   return (
     <HeaderConatiner>
-        <div>boblog</div>
+        <div>Boblog</div>
         <div className="header-right-side">
-          <div>돋보기</div>
-          <button>새글작성</button>
-          <div>이미지</div>
-          <div>토글버튼</div>
+          <SearchIcon className="header-search-icon"/>
+          <LoginButton>로그인</LoginButton>
         </div>
     </HeaderConatiner>
   )
