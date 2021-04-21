@@ -8,9 +8,7 @@ const Posts:FC<Props> = ({data}) => {
   return (
     <div>
       <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      <div>{data}</div>
       <Card/>
     </div>
   )

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const HeaderConatiner = styled.div`
   width:1024px;
-  height:64px;
+  height: 64px;
   font-family: monospace;
   font-size:1.4rem;
 
@@ -16,7 +16,6 @@ export const HeaderConatiner = styled.div`
 
   & .header-right-side{
     display:flex;
-    
   }
 
   & .header-search-icon{
@@ -24,6 +23,7 @@ export const HeaderConatiner = styled.div`
     position:relative;
     top:5px;
   }
+  
 `;
 
 export const LoginButton = styled.button`
