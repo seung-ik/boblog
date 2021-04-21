@@ -16,12 +16,12 @@ export const HeaderConatiner = styled.div`
 
   & .header-right-side{
     display:flex;
+    align-items:center;
+    height:64px;
   }
 
   & .header-search-icon{
     margin-right:0.8em;
-    position:relative;
-    top:5px;
   }
   
 `;

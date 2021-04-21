@@ -3,8 +3,8 @@ import Header from '@/components/Header'
 import { Link, NavLink } from 'react-router-dom'
 import Posts from '@/components/Posts'
 import {Container} from '@/pages/Trend/style'
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import TrendingUpIcon from '@material-ui/icons/TrendingUp';
+
+import ChangeBtn from '@/components/ChangeBtn'
 
 
 export default function Recent() {
@@ -14,24 +14,7 @@ export default function Recent() {
     <Container>
       <Header/>
       <div className="main-body">
-        <div id="buttons">
-          <NavLink style={{textDecoration:"none"}} activeClassName="click-main-button" exact to="/">
-            <div className="main-pick-button">
-              <span>
-                <TrendingUpIcon/>
-              </span>
-              <span>트렌드</span>
-            </div>
-          </NavLink>
-          <NavLink style={{textDecoration:"none"}} activeClassName="click-main-button" to="/recent">
-            <div className="main-pick-button">
-              <span>
-                <AccessTimeIcon/> 
-              </span>
-              <span>최신</span>
-            </div>
-          </NavLink>
-        </div>
+        <ChangeBtn/>
         <div id="post-container">
           <Posts data={sampleRecentData}/>
         </div>
